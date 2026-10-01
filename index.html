@@ -6726,7 +6726,7 @@ body.contact-modal-open{overflow:hidden}
       <div class="contact-field"><label for="contact-message">What’s on your mind?</label><textarea id="contact-message" name="message" required></textarea></div>
       <button class="contact-submit" type="submit">Send message</button>
       <p class="contact-status" id="contactStatus" aria-live="polite"></p>
-      <p class="contact-form-note">Prefer email? <a href="mailto:kris.asleson@gmail.com">kris.asleson@gmail.com</a>. Contact form submissions are processed by Formspree.</p>
+      <p class="contact-form-note">Contact form submissions are processed by Formspree.</p>
     </form>
   </section>
 </div>
@@ -8368,6 +8368,55 @@ document.addEventListener('DOMContentLoaded', function(){
 .stakes .thought-stage,
 .stakes .thought-video{
   background:transparent !important;
+}
+</style>
+
+
+<style id="holdclose-v120-final-mobile-refinements">
+@media (min-width:391px) and (max-width:420px){
+  /* iPhone 17-ish width: give the approved Why heading about 10% more presence. */
+  .stakes .mobile-stakes-heading-wide{
+    font-size:2.33rem !important;
+    line-height:.955 !important;
+    letter-spacing:-.05em !important;
+  }
+}
+
+@media (max-width:767px){
+  /* Match Try It Free step titles to the Problem-card title scale. */
+  .plan .step h3{
+    font-size:clamp(1.45rem, 5.9vw, 1.72rem) !important;
+    line-height:1.03 !important;
+  }
+
+  /* How HoldClose Helps: keep every caption consistently left aligned
+     and let the heading/body use the full width of each swipe card. */
+  .product .feature .feature-copy,
+  .product .feature:nth-child(even) .feature-copy{
+    width:100% !important;
+    max-width:100% !important;
+    margin:0 !important;
+    padding:20px 0 0 0 !important;
+    box-sizing:border-box !important;
+    text-align:left !important;
+  }
+
+  .product .feature h3,
+  .product .feature:nth-child(even) h3,
+  .product .feature p,
+  .product .feature:nth-child(even) p{
+    width:100% !important;
+    max-width:100% !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    text-align:left !important;
+    box-sizing:border-box !important;
+  }
+
+  .product .feature h3,
+  .product .feature:nth-child(even) h3{
+    white-space:normal !important;
+  }
 }
 </style>
 
